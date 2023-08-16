@@ -1,4 +1,4 @@
-# Infinite Angular Factory List/Grid :cyclone:
+# Dynamic Angular Factory List/Grid 🧮:
 
 Create dynamic lists or grids easily using Angular's dynamic factory approach, allowing you to customize and present collections of items in a versatile way. 🎉
 
@@ -12,11 +12,7 @@ Create dynamic lists or grids easily using Angular's dynamic factory approach, a
 
 ## Desktop View :desktop_computer:
 
-![Desktop View](image-1.png)
-
-## Mobile View :iphone:
-
-![Mobile View](image.png)
+![image](https://github.com/atzin-escandia/dynamic-angular-grid-factory/assets/77510953/9cfdf140-d5b7-44d2-b4c3-3675b0e205fe)
 
 ## Installation :computer:
 
@@ -53,27 +49,36 @@ Create dynamic lists or grids easily using Angular's dynamic factory approach, a
    ```typescript
    data = [
      {
-      title: 'Discover the beauty of nature',
-      buttonName: 'Explore',
-      image: 'https://images.unsplash.com/photo-1426604966848-d7adac402bff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80',
-    },
-    {
-      title: 'Tips for embracing natural beauty',
-      buttonName: 'See tips',
-      image: 'https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80',
-    },
-    {
-      title: 'The wonders of nature-inspired wellness',
-      buttonName: 'Explore',
-      image: 'https://images.unsplash.com/photo-1446329813274-7c9036bd9a1f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80',
-    }
+       title: "Discover the beauty of nature",
+       buttonName: "Explore",
+       image:
+         "https://images.unsplash.com/photo-1426604966848-d7adac402bff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+     },
+     {
+       title: "Tips for embracing natural beauty",
+       buttonName: "See tips",
+       image:
+         "https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+     },
+     {
+       title: "The wonders of nature-inspired wellness",
+       buttonName: "Explore",
+       image:
+         "https://images.unsplash.com/photo-1446329813274-7c9036bd9a1f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+     },
    ];
    ```
 
 2. Utilize the dynamic factory approach to create your list/grid components in your template:
 
    ```html
-   <app-dynamic-factory-list-grid [data]="data"></app-dynamic-factory-list-grid>
+   <app-dynamic-angular-grid-factory
+     [data]="data"
+     (eventDataEmitter)="handleEventData($event)"
+     [styles]="['border-style', 'bg-black']"
+     [component]="component"
+   >
+   </app-dynamic-angular-grid-factory>
    ```
 
 3. Provide an array of `data` objects to populate your dynamic list/grid. Each object should include properties such as title, buttonName, image, etc.
