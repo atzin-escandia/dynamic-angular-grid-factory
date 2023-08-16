@@ -25,7 +25,7 @@ Create dynamic lists or grids easily using Angular's dynamic factory approach, a
 2. Navigate to the project directory:
 
    ```bash
-   cd infinite-angular-factory-list-grid
+   cd infinite-angular-grid-factory
    ```
 
 3. Install the dependencies:
@@ -89,7 +89,7 @@ Create dynamic lists or grids easily using Angular's dynamic factory approach, a
 
 Contributions are welcome! If you encounter any issues or have ideas for enhancements, please open an issue or submit a pull request.
 
-Find this project useful? 🌱 &nbsp;
+Love this Dynamic Grid? 🌱 &nbsp;
 <a href="https://github.com/atzin-escandia" target="_blank" rel="noopener">
 Consider giving the repository a star.✨
 </a>
