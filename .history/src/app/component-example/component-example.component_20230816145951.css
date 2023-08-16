@@ -1,0 +1,19 @@
+
+.card {
+  background: pink;
+  border-radius: 1px;
+}
+
+img {
+  display: flex;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+a,
+a:visited,
+a:hover {
+  color: #125699;
+  text-decoration: none;
+}

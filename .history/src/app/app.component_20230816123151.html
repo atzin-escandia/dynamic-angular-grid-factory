@@ -1,0 +1,19 @@
+<app-infinite-carousel [slides]="slides"></app-infinite-carousel>
+
+<table-grid-component
+  class="row"
+  *ngIf="data.length"
+  [data]="data"
+  (eventDataEmitter)="handleEventData($event)"
+  [styles]="styles"
+  [component]="component"
+>
+</table-grid-component>
+
+<footer>
+  Love this carousel? 🌱 &nbsp;
+  <a href="https://github.com/atzin-escandia" target="_blank" rel="noopener">
+    Give my repo a star.✨
+  </a>
+  <br />
+</footer>

@@ -1,0 +1,5 @@
+<div>
+  <img class="pointer" [src]="card.pictureURL | cdn" alt="{{ t(card.name) }}" />
+  <h1>{{ title }}</h1>
+  <button (onClick)="handleClick()">{{ buttonName }}</button>
+</div>
